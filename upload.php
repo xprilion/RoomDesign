@@ -15,7 +15,7 @@ $extension = pathinfo($_FILES['userfile']['name'], PATHINFO_EXTENSION);
 	}
 
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-  echo "File is valid, and was successfully uploaded.\n";
+  ///echo "File is valid, and was successfully uploaded.\n";
            header("location: last.html");
 
 } else {
@@ -24,14 +24,14 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
 
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "csemelan_dyauser";
+$password = "!oQpEU,+p7iA";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=roomdesign", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=csemelan_dya", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully"; 
+    //echo "Connected successfully"; 
     }
 catch(PDOException $e)
     {
@@ -60,7 +60,7 @@ try {
 	
 	$sql = "INSERT INTO entries (name,email, phone, disc, time) VALUES ('$name', '$email', '$phone', '$disc', '$nname')";
 		$conn->exec($sql);
-		echo "New record created successfully";
+		//echo "New record created successfully";
 	}
 catch(PDOException $e)
     {

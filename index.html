@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Design Your Avenir Contest - Phoenix</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,6 +35,18 @@ h6,
 }
 </style>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114369776-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114369776-1');
+</script>
+
+
+</head>
 <body class="w3-content w3-theme" style="max-width:1200px">
     <!-- Sidebar/menu -->
     <div class="w3-hide-medium w3-hide-large">
@@ -82,10 +95,10 @@ h6,
             <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
         </div>
         <div class="w3-padding-64 w3-large w3-text-white" style="font-weight:bold">
-            <a href="#" class="w3-bar-item w3-button w3-hover-white">Design Phoenix Room</a>
-            <a href="#footer" class="w3-bar-item w3-button w3-padding w3-hover-white">Submit Entry</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-white">Design Phoenix Wall</a>
+            <a href="#submitEntry" class="w3-bar-item w3-button w3-padding w3-hover-white">Submit Entry</a>
             <a href="#footer" class="w3-bar-item w3-button w3-padding w3-hover-white">Have a Question?</a>
-            <a href="#footer" class="w3-bar-item w3-button w3-padding w3-hover-white">More About Us</a>
+            <!--<a href="#footer" class="w3-bar-item w3-button w3-padding w3-hover-white">More About Us</a>-->
         </div>
     </nav>
     <!-- Top menu on small screens -->
@@ -118,14 +131,18 @@ h6,
                 <div class="w3-col l3 s6">
                     <div class="w3-container">
                         <div class="w3-display-container">
-                            <img src="img/2.png" style="width:100%">
+                            
+                                <img src="img/2.png" style="width:100%">
+           
                         </div>
                     </div>
                 </div>
                 <div class="w3-col l3 s6">
                     <div class="w3-container">
                         <div class="w3-display-container">
-                            <img src="img/3.png" style="width:100%">
+                            <a href="#submitEntry">
+                                <img src="img/3.png" style="width:100%">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +153,8 @@ h6,
                 </div>
             </div>
         </div>
-		<div class="w3-row-padding w3-theme-d5">
+        <a name="submitEntry"></a>
+		<div class="w3-row-padding w3-padding-32 w3-theme-d5">
 				<div class="w3-col l3 s12">
                     &nbsp;
                 </div>
@@ -169,7 +187,7 @@ h6,
         <!-- Footer -->
         <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
             <div class="w3-row-padding">
-                <div class="w3-col s4">
+                <div class="w3-col l4 s12">
                     <h4>Contacts</h4>
                     <p>Questions? Go ahead.</p>
                     <form action="contact.php" target="_blank" method="post">
@@ -188,16 +206,17 @@ h6,
                         <button type="submit" class="w3-button w3-block w3-black">Send</button>
                     </form>
                 </div>
-                <div class="w3-col s4">
+                <div class="w3-col l4 s12">
                     <h4>About</h4>
-                    <p><a href="#">About us</a></p>
-                    <p><a href="#">Join the Team!</a></p>
-                    <p><a href="#">Support</a></p>
+                    <p><a href="https://phoenixnsec.org">About us</a></p>
+                    <!--<p><a href="#">Join the Team!</a></p>-->
+                    <!--<p><a href="#">Support</a></p>-->
                 </div>
-                <div class="w3-col s4 w3-justify">
+                <div class="w3-col l4 s12 w3-justify">
                     <h4>Phoenix Designers</h4>
                     <p><i class="fa fa-fw fa-map-marker"></i> Phoenix, NSEC, Kolkata</p>
-                    <p><i class="fa fa-fw fa-phone"></i></p>
+                    <p><i class="fa fa-fw fa-phone"></i>Shivam: 7059557433</p>
+                    <p><i class="fa fa-fw fa-phone"></i>Ritwik: 8017333605</p>
                     <p><i class="fa fa-fw fa-envelope"></i> dya@phoenixnsec.org</p>
                     <br>
                 </div>
