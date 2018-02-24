@@ -136,11 +136,41 @@ h6,
                 </div>
             </div>
         </div>
+		<div class="w3-row-padding w3-theme-d5">
+				<div class="w3-col l3 s12">
+                    &nbsp;
+                </div>
+                <div class="w3-col l6 s12">
+                    <h4>Submit your Entry</h4>
+					<form enctype="multipart/form-data"  target="_blank"  action="upload.php" method="POST">
+                        <p>
+                            <input class="w3-input w3-border" type="text" placeholder="Name" name="name" required>
+                        </p>
+                        <p>
+                            <input class="w3-input w3-border" type="e-mail" placeholder="Email" name="email" required>
+                        </p>
+                        <p>
+                            <input class="w3-input w3-border" type="text" placeholder="Phone" name="phone" required>
+                        </p>
+                        <p>
+                            <input class="w3-input w3-border" type="text" placeholder="Describe your Submission" name="disc" required>
+                        </p>
+							Upload your file: <input name="userfile" type="file" />
+						</p>
+                        <button type="submit" class="w3-button w3-block w3-black">Send</button>
+                    </form>
+					<br>
+                </div>
+                
+                <div class="w3-col l3 w3-justify">
+                    &nbsp;
+                </div>
+            </div>
         <!-- Footer -->
         <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
             <div class="w3-row-padding">
                 <div class="w3-col s4">
-                    <h4>Contact</h4>
+                    <h4>Contacts</h4>
                     <p>Questions? Go ahead.</p>
                     <form action="contact.php" target="_blank" method="post">
                         <p>
@@ -169,13 +199,7 @@ h6,
                     <p><i class="fa fa-fw fa-map-marker"></i> Phoenix, NSEC, Kolkata</p>
                     <p><i class="fa fa-fw fa-phone"></i></p>
                     <p><i class="fa fa-fw fa-envelope"></i> dya@phoenixnsec.org</p>
-                    <h4>We accept</h4>
-                    <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-                    <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
                     <br>
-                    <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
-                    <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
-                    <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
                 </div>
             </div>
         </footer>
